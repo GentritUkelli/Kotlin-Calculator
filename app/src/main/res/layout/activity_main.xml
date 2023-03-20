@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/display_result"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:id="@+id/edit_first"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/display_result"
+        android:layout_width="80dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/edit_second"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_first"
+        android:layout_width="80dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_marginStart="20dp"
+        android:text="Add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edit_second"
+        android:textAllCaps="false"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/subtract"
+        android:layout_marginStart="20dp"
+        android:text="Subtract"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:text="Multiply"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/subtract"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/Divide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:text="Divide"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/multiply"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
